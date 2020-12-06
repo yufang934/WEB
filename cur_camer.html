@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>智慧推薦牆</title>
+    <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/curcamer.css" rel="stylesheet" type="text/css">
+<style>
+.masthead-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 46, 102, 0.9);
+    transform: skewX(9deg);
+    transform-origin: bottom right;
+}
+</style>
+<body>
+    <div class="head">MAGIC MIRROR</div>
+    <div class="masthead-bg"></div>
+    <video class="video1" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="static/mp4/GU.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <h1>智慧推薦牆</h1>
+        <p>拍照囉拍照囉準備拍照囉
+            <strong>拍照囉拍照囉準備拍照囉</strong></p>
+    </div>
+
+    <div class="social-icons">
+        <ul class="list-unstyled text-center mb-0">
+            <li class="list-unstyled-item">
+                <a href="https://www.gu-global.com/tw/">
+                <i class="fas fa-tshirt"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="/detect">
+                <i class="fas fa-camera"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="/">
+                <i class="fas fa-home"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="/recommend">
+                <i class="fas fa-thumbs-up"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <img class="camera123" src="{{ url_for('video_feed') }}" width="500" height="550" position="absolute" right="10%" bottom="5%" z-index="7"> 
+
+    <video class="video2" width="80" height="80" autoplay="autoplay" muted="muted">
+    <source src="./static/mp4/ready.mp4" type="video/mp4" />
+    </video>
+
+    <div class="footer">智慧推薦牆</div>
+</body>
+</html>

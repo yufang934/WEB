@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <title>智慧推薦牆</title>
+    <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/recommend.css" rel="stylesheet" type="text/css">
+<style>
+.masthead-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 46, 102, 0.9);
+    transform: skewX(9deg);
+    transform-origin: bottom right;
+}
+
+.imgall img{
+    border-radius: 15px;
+    width: 180px;
+    height: 180px;
+}
+
+.img1{
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.imgall .name1{
+    position: absolute;
+    left: 300px;
+    top: 40px;
+    color: #E8E8E8;
+}
+
+.img2{
+    position: absolute;
+    left: 100px;
+    top: 280px;
+}
+
+.imgall .name2{
+    position: absolute;
+    left: 300px;
+    top: 280px;
+    color: #E8E8E8;
+}
+
+.img3{
+    position: absolute;
+    left: 100px;
+    top: 500px;
+}
+
+.imgall .name3{
+    position: absolute;
+    left: 300px;
+    top: 500px;
+    color:#E8E8E8;
+}
+
+.img4{
+    position: absolute;
+    left: 580px;
+    top: 40px;
+}
+
+.imgall .name4{
+    position: absolute;
+    left: 780px;
+    top: 40px;
+    color:#E8E8E8;
+    background-color:#FFB235;
+}
+
+.img5{
+    position: absolute;
+    left: 580px;
+    top:280px;
+}
+
+.imgall .name5{
+    position: absolute;
+    left: 780px;
+    top: 280px;
+    color:#E8E8E8;
+    background-color:#FFB235;
+}
+</style>
+</head>
+<body>
+    <div class="head">MAGIC MIRROR</div>
+    <div class="masthead-bg"></div>
+    <video class="video1" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="static/mp4/GU.mp4" type="video/mp4">
+    </video>
+
+    <div class="masthead-bg"></div>
+
+    <div class="imgall">
+        <h3 class="name1">{{data1[0]}}</h3>
+        <div class="img1">
+            <img src="{{data2[0]}}">
+        </div>
+        <h3 class="name2">{{data1[1]}}</h3>
+        <div class="img2">
+            <img src="{{data2[1]}}">
+        </div>
+        <h3 class="name3">{{data1[2]}}</h3>
+        <div class="img3">
+            <img src="{{data2[2]}}">
+        </div>
+        <h3 class="name4">{{data3[0]}}</h3>
+        <div class="img4">
+            <img src="{{data4[0]}}">
+        </div>
+        <h3 class="name5">{{data3[1]}}</h3>
+        <div class="img5">
+            <img src="{{data4[1]}}">
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <ul class="list-unstyled text-center mb-0">
+            <li class="list-unstyled-item">
+                <a href="https://www.gu-global.com/tw/">
+                <i class="fas fa-tshirt"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="/detect">
+                <i class="fas fa-camera"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="/">
+                <i class="fas fa-home"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="/recommend">
+                <i class="fas fa-thumbs-up"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <div class="footer">智慧推薦牆</div>
+</body>
+</html>
